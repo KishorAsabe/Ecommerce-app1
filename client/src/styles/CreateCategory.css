@@ -1,0 +1,37 @@
+/* Add this CSS to your existing styles or create a new CSS file */
+
+/* Default styles for larger screens */
+.container-fluid {
+    padding: 20px;
+  }
+  
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+  
+  .col-md-9 {
+    width: 75%;
+    float: left;
+  }
+  
+  .p-3 {
+    padding: 1.5rem;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .col-md-3, .col-md-9 {
+      width: 100%;
+      float: none;
+    }
+  
+    .w-50 {
+      width: 100%;
+    }
+  }
+  

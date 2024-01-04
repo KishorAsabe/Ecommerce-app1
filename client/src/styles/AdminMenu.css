@@ -1,0 +1,38 @@
+/* Add this CSS to your existing styles or create a new CSS file (AdminMenu.css) */
+
+.list-group {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+  
+  .list-group h4 {
+    background-color: #00070d;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0;
+  }
+  
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+  }
+  
+  .list-group-item:hover {
+    background-color: #d6d8db;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .list-group h4 {
+      font-size: 1.2em;
+    }
+  
+    .list-group {
+      margin-top: 0;
+    }
+  }
+  
