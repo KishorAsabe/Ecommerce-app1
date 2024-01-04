@@ -15,8 +15,6 @@ dotenv.config();
 //port
 const PORT = process.env.PORT || 8080;
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 
 //database config
 connectDB();
@@ -35,17 +33,12 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 
-// app.use(express.static(path.join(__dirname, "./client/build")));
 
 //rotes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
-//rest api
-// app.use("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
 
 //def route
 
@@ -56,11 +49,6 @@ app.get("/", (req, res) => {
 	});
 });
 
-
-//run listen
-// app.listen(PORT, () => {
-//   console.log(`Server Running on ${PORT}`.bgCyan.white);
-// });
 
 app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)
