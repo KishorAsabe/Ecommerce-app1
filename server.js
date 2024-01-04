@@ -27,7 +27,7 @@ const app = express();
 //middlewares
 app.use(
 	cors({
-		origin:"http://localhost:3000",
+		origin:"https://ecommerce-app1-vert.vercel.app/",
 		credentials:true,
 	})
 )
